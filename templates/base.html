@@ -1,0 +1,93 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Aizea" content="2xk">
+    <meta name="generator" content="ebooks">
+    <title>Mipo E. Dadang PhD\{{ object.title }}</title>
+
+
+
+
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'css/navbar.css' %}" rel="stylesheet">
+<style>
+body{
+  padding-top: 60px;
+  }
+  @media (max-width: 979px) {
+  body {
+  padding-top: 0px;
+  }
+
+
+</style>
+
+
+
+  <body>
+
+<header class="blog-header">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home' %}">Mipo E. Dadang PhD</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'publications' %}">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'books' %}">Books</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+	<!-- end:header-top -->
+
+{% block content %}
+
+{% endblock %}
+
+
+
+
+<div class="container">
+<footer class="blog-footer">
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+    </div>
+	<!-- jQuery -->
+<script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</div>
+	</body>
+</html>
+
